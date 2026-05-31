@@ -17,7 +17,7 @@ def main():
     video_frames = read_video(video_path)
 
     # Step 2: Initialize tracker with 2 models
-    tracker = Tracker("models/best.pt", "models/ball_best.pt")
+    tracker = Tracker("yolov8s_players_refs_best.pt", "yolov8s_ball_best.pt")
 
     # Step 3: Get object tracks (players + referees + ball)
     tracks = tracker.get_object_tracks(video_frames)
